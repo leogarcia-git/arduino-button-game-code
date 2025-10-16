@@ -1,3 +1,7 @@
+
+// highest score ever
+// |Daniel B. ---> 113|
+
 // —— CONFIGURATION ——————————————————————————————————————————————————————
 static const int   NUM_BUTTONS            = 9;
 static const unsigned long GAME_DURATION  = 30000UL;
@@ -16,11 +20,6 @@ int score = 0;        // keeps track of the correct hits
 void setup() {
   Serial.begin(9600);
   randomSeed(analogRead(A0));  
-
-  // configure LED pins as outputs, start them off
-  
-
-  // configure the restart button the same way
   pinMode(restartPin, INPUT_PULLUP);
 
   // kick off the first game
